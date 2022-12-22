@@ -1,7 +1,7 @@
 package com.github.mohamedsaidumn.basics.springin5steps.basic;
 
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
+//import jakarta.annotation.PostConstruct;
+//import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,14 +27,14 @@ public class BinarySearchImpl {
         return 3;
     }
 
-    @PostConstruct
-    public void PostConstruct(){
-        logger.info("PostConstruct");
-    }
-
-    @PreDestroy
-    public void PreDestroy(){
-        logger.info("PreDestroy");
-    }
+//    @PostConstruct
+//    public void PostConstruct(){
+//        logger.info("PostConstruct");
+//    }
+//
+//    @PreDestroy
+//    public void PreDestroy(){
+//        logger.info("PreDestroy");
+//    }
 
 }

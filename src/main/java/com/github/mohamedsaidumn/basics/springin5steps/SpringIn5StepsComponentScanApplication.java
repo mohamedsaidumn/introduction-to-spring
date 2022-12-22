@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import com.github.mohamedsaidumn.basics.componentscan.ComponentDAO;
 
 //@Configuration
-@ComponentScan("com.github.mohamedsaidumn.basics.componentscan")
+@ComponentScan
 public class SpringIn5StepsComponentScanApplication {
 
     private static Logger LOGGER = LoggerFactory.getLogger(SpringIn5StepsComponentScanApplication.class);
