@@ -1,6 +1,5 @@
 package com.github.mohamedsaidumn.basics.springin5steps;
 
-import com.github.mohamedsaidumn.basics.springin5steps.basic.BinarySearchImpl;
 import com.github.mohamedsaidumn.basics.springin5steps.scope.PersonDAO;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -15,13 +14,13 @@ import org.slf4j.Logger;
 //3) Where to search for beans? => No need (checks the package and everything in it by default)
 
 @SpringBootApplication
-public class SpringIn5StepsApplication {
-	private static Logger logger = LoggerFactory.getLogger(SpringIn5StepsApplication.class);
+public class SpringIn5StepsScopeApplication {
+	private static Logger logger = LoggerFactory.getLogger(SpringIn5StepsScopeApplication.class);
 
 	public static void main(String[] args) {
 
 		ApplicationContext applicationContext =
-				SpringApplication.run(SpringIn5StepsApplication.class, args);
+				SpringApplication.run(SpringIn5StepsScopeApplication.class, args);
 		PersonDAO personDAO1 =
 				applicationContext.getBean(PersonDAO.class);
 		PersonDAO personDAO2 =
@@ -29,11 +28,12 @@ public class SpringIn5StepsApplication {
 
 
 		logger.info("{}", personDAO1);
-        logger.info("{}", personDAO1);
-        logger.info("{}", personDAO1.getJdbcConnection());
-        logger.info("{}", personDAO1.getJdbcConnection());
+		logger.info("{}", personDAO1.getJdbcConnection());
+		logger.info("Hello");
 
 
+		logger.info("{}", personDAO2);
+		logger.info("{}", personDAO2.getJdbcConnection());
 
 
 
