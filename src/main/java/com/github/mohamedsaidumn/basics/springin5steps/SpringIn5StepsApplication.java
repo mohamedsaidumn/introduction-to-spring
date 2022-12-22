@@ -29,10 +29,11 @@ public class SpringIn5StepsApplication {
 
 
 		logger.info("{}", personDAO1);
-		logger.info("{}", personDAO1.getJdbcConnection());
+        logger.info("{}", personDAO1);
+        logger.info("{}", personDAO1.getJdbcConnection());
+        logger.info("{}", personDAO1.getJdbcConnection());
 
-		logger.info("{}", personDAO2);
-		logger.info("{}", personDAO2.getJdbcConnection());
+
 
 
 
