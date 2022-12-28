@@ -3,8 +3,10 @@ plugins {
 	id 'org.springframework.boot' version '3.0.0'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
+apply plugin: 'application'
+mainClassName= 'com.github.mohamedsaidumn.basics.springin5steps.SpringIn5StepsBasicApplication'
 
-group = 'com.github.mohamedsaidumn.basic'
+group = 'com.github.mohamedsaidumn.basics'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '19'
 
@@ -15,13 +17,18 @@ repositories {
 dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'javax.inject:javax.inject:1'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	//new
 	implementation 'org.springframework:spring-core'
 	implementation 'org.springframework:spring-context'
 	implementation 'org.slf4j:slf4j-api'
 	implementation 'ch.qos.logback:logback-classic'
+	testImplementation 'org.springframework:spring-test:6.0.3'
+	testImplementation 'junit:junit:4.13.2'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+	testImplementation 'org.mockito:mockito-core:4.10.0'
 }
 
 
