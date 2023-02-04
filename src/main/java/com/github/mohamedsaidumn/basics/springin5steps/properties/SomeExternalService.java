@@ -9,8 +9,15 @@ public class SomeExternalService {
 
     @Value("${external.service.url}")
     public String url;
+    @Value("#{environment.TEST_VARIABLE ?: 'Nothing was Found'}")
+    public String key;
 
     public String returnServiceURL(){
         return url;
     }
+
+    public String returnEnvironmentKey(){
+        return key;
+    }
+
 }

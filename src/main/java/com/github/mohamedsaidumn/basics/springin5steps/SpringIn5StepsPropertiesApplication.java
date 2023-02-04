@@ -21,7 +21,12 @@ public class SpringIn5StepsPropertiesApplication {
                 SpringIn5StepsPropertiesApplication.class)) {
             SomeExternalService service =
                     applicationContext.getBean(SomeExternalService.class);
-            System.out.println(service);
+
+            logger.info("{}", service);
+            logger.info("{}", service.returnServiceURL());
+            logger.info("{}", service.returnEnvironmentKey());
+
+
         }
 
     }
